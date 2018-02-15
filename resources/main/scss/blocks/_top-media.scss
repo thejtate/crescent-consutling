@@ -1,0 +1,59 @@
+.top-media {
+  position: relative;
+  overflow: hidden;
+
+  @media (min-width: $bp-small) {
+    height: auto;
+    min-height: 250px;
+    max-height: 335px;
+  }
+
+  .page-consultants & {
+    text-align: center;
+  }
+
+  .bg-img {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: -75px;
+    width: 100%;
+    height: calc(100% + 150px);
+    z-index: -1;
+  }
+
+  .front & {
+    margin-bottom: 20px;
+    max-height: none;
+
+    @media (min-width: $bp-small) {
+      margin-bottom: 50px;
+    }
+
+    @media (min-width: $bp-middle) {
+      margin-bottom: 138px;
+    }
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 32px;
+    color: #fff;
+    font-family: $museoslab-100;
+    line-height: 1;
+    padding: 60px 15px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.41);
+
+    @media (min-width: $bp-small) {
+      font-size: 56px;
+      padding: 80px 15px;
+    }
+
+    @media (min-width: $bp-middle) {
+      font-size: 85px;
+      padding: 110px 0;
+    }
+  }
+}

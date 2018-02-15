@@ -1,0 +1,713 @@
+.content-wrapper {
+  padding: 0 15px;
+
+  &.container {
+    width: 100%;
+  }
+
+  @media (min-width: $bp-middle) {
+    padding: 0;
+  }
+
+  .page-services &, .front & {
+    margin-bottom: 40px;
+
+    @media (min-width: $bp-small) {
+      margin-bottom: 77px;
+    }
+  }
+
+  &.with-sidebar {
+
+    .front & {
+
+      h2 {
+        font-size: 26px;
+        color: #3c3c3c;
+        font-family: museo-700;
+        margin: 0 0 20px;
+        text-align: center;
+
+        @media (min-width: $bp-small) {
+          font-size: 51px;
+          margin: 0 0 37px;
+        }
+
+        @media (min-width: $bp-middle) {
+          text-align: left;
+        }
+      }
+    }
+
+    .desc {
+      font-family: $avenir-meidum;
+      margin-bottom: 20px;
+
+      @media (min-width: $bp-middle) {
+        padding-right: 60px;
+        float: left;
+        width: 660px;
+      }
+    }
+  }
+
+  .bg {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -3000px;
+    @include background-image(linear-gradient(#fff 0%, #e6e6e5 100%));
+    width: 6000px;
+    display: block;
+    z-index: -1;
+    border-bottom: 1px solid #848484;
+  }
+
+  .node-water-services, .node-solutions {
+    position: relative;
+    color: #7d7d7d;
+
+    .b-tabs-wrapper {
+
+      .quicktabs-tabs a, .tabs-list a {
+        position: relative;
+
+        &:before {
+          @include pseudo-block($top: -40px, $left: 50%);
+          @include translate(-50%, -50%);
+        }
+
+        &:hover {
+          text-decoration: none;
+        }
+
+        br {
+          @media (max-width: $bp-middle) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .node-water-services {
+
+    .b-tabs-wrapper {
+
+      .btn-wrap {
+        margin-bottom: 50px;
+      }
+
+      .bg {
+        display: none;
+      }
+
+      .b-tabs-wrapper {
+
+        @media (max-width: $bp-middle) {
+          display: none;
+        }
+      }
+
+      @media (max-width: $bp-small - 1) {
+
+        #quicktabs-tab-water_services-0:before {
+          left: 9px;
+          @include oneline-sprite-box($icons, water-resources-1-s);
+        }
+
+        .active #quicktabs-tab-water_services-0:before, .title #quicktabs-tab-water_services-0:before {
+          @include oneline-sprite($icons, water-resources-1-a-s);
+        }
+
+        #quicktabs-tab-water_services-1:before {
+          left: 8px;
+          @include oneline-sprite-box($icons, water-resources-2-s);
+        }
+
+        .active #quicktabs-tab-water_services-1:before, .title #quicktabs-tab-water_services-1:before {
+          @include oneline-sprite($icons, water-resources-2-a-s);
+        }
+
+        #quicktabs-tab-water_services-2:before {
+          left: 18px;
+          @include oneline-sprite-box($icons, water-resources-3-s);
+        }
+
+        .active #quicktabs-tab-water_services-2:before, .title #quicktabs-tab-water_services-2:before {
+          @include oneline-sprite($icons, water-resources-3-a-s);
+        }
+
+        #quicktabs-tab-water_services-3:before {
+          left: 0;
+          @include oneline-sprite-box($icons, water-resources-4-s);
+        }
+
+        .active #quicktabs-tab-water_services-3:before, .title #quicktabs-tab-water_services-3:before {
+          @include oneline-sprite($icons, water-resources-4-a-s);
+        }
+
+        #quicktabs-tab-water_services-4:before {
+          left: 7px;
+          @include oneline-sprite-box($icons, water-resources-5-s);
+        }
+
+        .active #quicktabs-tab-water_services-4:before, .title #quicktabs-tab-water_services-4:before {
+          @include oneline-sprite($icons, water-resources-5-a-s);
+        }
+      }
+
+      @media (min-width: $bp-small) {
+
+        #quicktabs-tab-water_services-0:before {
+          left: 21px;
+          @include oneline-sprite-box($icons, water-resources-1);
+        }
+
+        .active #quicktabs-tab-water_services-0:before, .title #quicktabs-tab-water_services-0:before, li:hover #quicktabs-tab-water_services-0:before {
+          @include oneline-sprite($icons, water-resources-1-a);
+        }
+
+        #quicktabs-tab-water_services-1:before {
+          left: 23px;
+          @include oneline-sprite-box($icons, water-resources-2);
+        }
+
+        .active #quicktabs-tab-water_services-1:before, .title #quicktabs-tab-water_services-1:before, li:hover #quicktabs-tab-water_services-1:before {
+          @include oneline-sprite($icons, water-resources-2-a);
+        }
+
+        #quicktabs-tab-water_services-2:before {
+          left: 45px;
+          @include oneline-sprite-box($icons, water-resources-3);
+        }
+
+        .active #quicktabs-tab-water_services-2:before, .title #quicktabs-tab-water_services-2:before, li:hover #quicktabs-tab-water_services-2:before {
+          @include oneline-sprite($icons, water-resources-3-a);
+        }
+
+        #quicktabs-tab-water_services-3:before {
+          left: 0;
+          @include oneline-sprite-box($icons, water-resources-4);
+        }
+
+        .active #quicktabs-tab-water_services-3:before, .title #quicktabs-tab-water_services-3:before, li:hover #quicktabs-tab-water_services-3:before {
+          @include oneline-sprite($icons, water-resources-4-a);
+        }
+
+        #quicktabs-tab-water_services-4:before {
+          left: 10px;
+          @include oneline-sprite-box($icons, water-resources-5);
+        }
+
+        .active #quicktabs-tab-water_services-4:before, .title #quicktabs-tab-water_services-4:before, li:hover #quicktabs-tab-water_services-4:before {
+          @include oneline-sprite($icons, water-resources-5-a);
+        }
+      }
+
+      @media (min-width: $bp-middle) {
+
+        #quicktabs-tab-water_services-0:before, #quicktabs-tab-water_services-1:before, #quicktabs-tab-water_services-2:before, #quicktabs-tab-water_services-3:before, #quicktabs-tab-water_services-4:before {
+          left: 50%;
+        }
+      }
+    }
+  }
+
+  .node-solutions {
+
+    .title h2 {
+      font-family: $museo-700;
+      text-transform: none;
+      font-size: 30px;
+
+      @media (min-width: $bp-small) {
+        font-size: 46px;
+      }
+
+      @media (min-width: $bp-middle) {
+        font-size: 64px;
+      }
+    }
+
+    .b-tabs-wrapper {
+
+      @media (max-width: $bp-small - 1) {
+
+        #quicktabs-tab-solutions-0:before {
+          left: 9px;
+          @include oneline-sprite-box($icons, solutions-1-s);
+        }
+
+        .active #quicktabs-tab-solutions-0:before, .title #quicktabs-tab-solutions-0:before {
+          @include oneline-sprite($icons, solutions-1-a-s);
+        }
+
+        #quicktabs-tab-solutions-1:before {
+          left: 8px;
+          @include oneline-sprite-box($icons, solutions-2-s);
+        }
+
+        .active #quicktabs-tab-solutions-1:before, .title #quicktabs-tab-solutions-1:before {
+          @include oneline-sprite($icons, solutions-2-a-s);
+        }
+
+        #quicktabs-tab-solutions-2:before {
+          left: 18px;
+          @include oneline-sprite-box($icons, solutions-3-s);
+        }
+
+        .active #quicktabs-tab-solutions-2:before, .title #quicktabs-tab-solutions-2:before {
+          @include oneline-sprite($icons, solutions-3-a-s);
+        }
+
+        #quicktabs-tab-solutions-3:before {
+          left: 13px;
+          @include oneline-sprite-box($icons, solutions-4-s);
+        }
+
+        .active #quicktabs-tab-solutions-3:before, .title #quicktabs-tab-solutions-3:before {
+          @include oneline-sprite($icons, solutions-4-a-s);
+        }
+
+        #quicktabs-tab-solutions-4:before {
+          left: 15px;
+          @include oneline-sprite-box($icons, solutions-5-s);
+        }
+
+        .active #quicktabs-tab-solutions-4:before, .title #quicktabs-tab-solutions-4:before {
+          @include oneline-sprite($icons, solutions-5-a-s);
+        }
+      }
+
+      @media (min-width: $bp-small) {
+
+        #quicktabs-tab-solutions-0:before {
+          left: 25px;
+          @include oneline-sprite-box($icons, solutions-1);
+        }
+
+        .active #quicktabs-tab-solutions-0:before, .title #quicktabs-tab-solutions-0:before, li:hover #quicktabs-tab-solutions-0:before {
+          @include oneline-sprite($icons, solutions-1-a);
+        }
+
+        #quicktabs-tab-solutions-1:before {
+          left: 23px;
+          @include oneline-sprite-box($icons, solutions-2);
+        }
+
+        .active #quicktabs-tab-solutions-1:before, .title #quicktabs-tab-solutions-1:before, li:hover #quicktabs-tab-solutions-1:before {
+          @include oneline-sprite($icons, solutions-2-a);
+        }
+
+        #quicktabs-tab-solutions-2:before {
+          left: 50px;
+          @include oneline-sprite-box($icons, solutions-3);
+        }
+
+        .active #quicktabs-tab-solutions-2:before, .title #quicktabs-tab-solutions-2:before, li:hover #quicktabs-tab-solutions-2:before {
+          @include oneline-sprite($icons, solutions-3-a);
+        }
+
+        #quicktabs-tab-solutions-3:before {
+          left: 40px;
+          @include oneline-sprite-box($icons, solutions-4);
+        }
+
+        .active #quicktabs-tab-solutions-3:before, .title #quicktabs-tab-solutions-3:before, li:hover #quicktabs-tab-solutions-3:before {
+          @include oneline-sprite($icons, solutions-4-a);
+        }
+
+        #quicktabs-tab-solutions-4:before {
+          left: 41px;
+          @include oneline-sprite-box($icons, solutions-5);
+        }
+
+        .active #quicktabs-tab-solutions-4:before, .title #quicktabs-tab-solutions-4:before, li:hover #quicktabs-tab-solutions-4:before {
+          @include oneline-sprite($icons, solutions-5-a);
+        }
+      }
+
+      @media (min-width: $bp-middle) {
+
+        #quicktabs-tab-solutions-3:before {
+          left: 70px;
+        }
+
+        #quicktabs-tab-solutions-4:before {
+          left: 22px;
+        }
+      }
+    }
+  }
+
+  .tabs-list {
+    max-width: 500px;
+    margin: 35px auto 0;
+    font-size: 18px;
+    display: block;
+
+    @media (min-width: $bp-small) {
+      font-size: 22px;
+    }
+
+    @media (min-width: $bp-middle) {
+      display: none;
+    }
+
+    a {
+      white-space: normal;
+    }
+
+    &.open-tabs {
+
+      .title {
+        border-bottom: 1px solid transparent;
+        @include border-radius(10px 10px 0 0);
+
+        a:after {
+          @include transform(rotate(180deg) translateY(50%));
+        }
+      }
+
+      .quicktabs-tabs {
+        opacity: 1;
+        height: 100%;
+      }
+    }
+
+    .title {
+      padding: 0 10px;
+      border: 1px solid #ccc;
+      @include border-radius(10px);
+
+      @media (min-width: $bp-small) {
+        padding: 0 20px;
+      }
+
+      a {
+        display: block;
+        padding: 15px 10px 15px 70px;
+
+        &:hover {
+          text-decoration: none;
+        }
+
+        @media (min-width: $bp-small) {
+          padding: 40px 34px 40px 110px;
+        }
+
+        &:after {
+          @include pseudo-block($top: 50%, $right: 7px);
+          @include oneline-sprite-box($icons, arrw-icon-s-a);
+          @include translateY(-50%);
+          @include transition(all .3s);
+
+          @media (min-width: $bp-small) {
+            @include oneline-sprite-box($icons, arrw-icon-a);
+          }
+        }
+
+        &:before {
+          left: 0 !important;
+          top: 50% !important;
+          @include transform(translate(0, -50%) !important);
+        }
+      }
+    }
+
+    .quicktabs-tabs {
+      display: block;
+      border: 1px solid #ccc;
+      @include border-radius(0 0 10px 10px);
+      font-size: 18px;
+      height: 0;
+      opacity: 0;
+      overflow: hidden;
+      @include transition(all .3s);
+
+      @media (min-width: $bp-small) {
+        font-size: 22px;
+      }
+
+      @media (min-width: $bp-middle) {
+        display: none;
+      }
+
+      li {
+        display: block;
+        padding: 20px 10px 20px 5px;
+        margin: 0;
+
+        @media (min-width: $bp-small) {
+          padding: 40px 20px
+        }
+
+        &.active:before {
+          display: none;
+        }
+
+        a {
+          display: block;
+          text-align: left;
+          padding-left: 78px;
+
+          @media (min-width: $bp-small) {
+            padding-left: 150px;
+          }
+
+          &:before {
+            top: 50% !important;
+            @include transform(translate(0, -50%) !important);
+
+            @media (min-width: $bp-middle) {
+              left: 50% !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .quicktabs-tabs {
+    margin: 0;
+    padding: 5px 0 0;
+    text-align: center;
+    font-size: 14px;
+    display: none;
+
+    @media (min-width: $bp-middle) {
+      display: block;
+      padding: 35px 0 0;
+    }
+
+    li {
+      display: inline-block;
+      margin: 0 65px 0 0;
+      padding: 80px 0 35px;
+      position: relative;
+
+      &:last-child {
+        margin: 0;
+      }
+
+      &.active:before {
+        @include pseudo-block($bottom: -3px, $left: 50%);
+        @include translateX(-50%);
+        @include oneline-sprite-box($icons, arr-tabs);
+      }
+
+      a {
+        color: #6c6c6d;
+        position: relative;
+        padding-top: 13px;
+      }
+    }
+  }
+
+  .title h2 {
+    text-transform: uppercase;
+    font-family: $museoslab-100;
+    text-align: center;
+    font-size: 25px;
+    margin: 0;
+    padding: 30px 0;
+    border-bottom: 1px solid #c8c8c8;
+    line-height: 1;
+
+    @media (min-width: $bp-small) {
+      padding: 45px 0;
+      font-size: 50px;
+    }
+  }
+
+  .quicktabs_main {
+
+    h3 {
+      text-align: center;
+      font-size: 22px;
+      margin: 30px 0 20px;
+
+      @media (min-width: $bp-small) {
+        font-size: 32px;
+      }
+
+      @media (min-width: $bp-middle) {
+        font-size: 36px;
+        margin: 75px 0 40px;
+      }
+    }
+
+    h4 {
+      font-size: 24px;
+      font-family: $museo-700;
+      margin: 0 0 45px;
+      text-align: center;
+      color: #3c3c3c;
+    }
+
+    h5 {
+      text-align: center;
+      margin: 20px 0;
+      font-size: 22px;
+      font-family: $museoslab-100;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #c8c8c8;
+      text-transform: uppercase;
+      line-height: 1;
+
+      @media (min-width: $bp-small) {
+        font-size: 36px;
+        padding-bottom: 50px;
+        margin: 50px 0;
+      }
+    }
+
+    .text {
+      @include clearfix();
+      font-family: $avenir-meidum;
+      line-height: 1.3;
+
+      &.style-a {
+        max-width: 660px;
+        margin: 0 auto 55px;
+
+        p {
+          line-height: 1.7;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      &.text-slider {
+        font-size: 15px;
+
+        @media (min-width: $bp-small) {
+          font-size: 18px;
+        }
+
+        .left-part {
+
+          @media (min-width: $bp-middle) {
+            width: 420px;
+            float: left;
+            padding-right: 40px;
+          }
+        }
+
+        .right-part {
+
+          @media (min-width: $bp-middle) {
+            width: 560px;
+            float: left;
+          }
+        }
+      }
+    }
+  }
+
+  .quicktabs-hide {
+    display: block;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  ul {
+
+    &.style-a {
+      max-width: 560px;
+
+      li {
+        width: 252px;
+      }
+    }
+
+    &.style-b {
+      max-width: 300px;
+
+      li {
+        width: 290px;
+      }
+    }
+
+    &.style-c {
+
+      @media (min-width: $bp-small) {
+        max-width: 750px;
+      }
+
+      @media (min-width: $bp-middle) {
+        max-width: 790px;
+      }
+
+      li {
+
+        @media (min-width: $bp-small) {
+          width: 340px;
+        }
+
+        @media (min-width: $bp-middle) {
+          width: 380px;
+        }
+      }
+    }
+  }
+
+  .list-wrapper {
+    text-align: center;
+
+    @media (min-width: $bp-small) {
+      text-align: left;
+    }
+  }
+
+  #quicktabs-tabpage-solutions-0 .list-wrapper li:before {
+    @include oneline-sprite-box($icons, wellsitemgmt);
+  }
+
+  #quicktabs-tabpage-solutions-1 .list-wrapper li:before {
+    @include oneline-sprite-box($icons, projectmgmt);
+  }
+
+  #quicktabs-tabpage-solutions-2 .list-wrapper li:before {
+    @include oneline-sprite-box($icons, cementfrac);
+  }
+
+  #quicktabs-tabpage-solutions-3 .list-wrapper li:before {
+    @include oneline-sprite-box($icons, envrmtsafety);
+  }
+
+  #quicktabs-tabpage-solutions-4 .list-wrapper li:before {
+    @include oneline-sprite-box($icons, qaqc);
+  }
+
+  .list-style-a {
+    margin: 0 auto 80px;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+    display: inline-block;
+
+    @media (min-width: $bp-small) {
+      display: block;
+    }
+
+    li {
+      padding-left: 50px;
+      margin: 0 10px 26px 0;
+      position: relative;
+
+      @media (min-width: $bp-small) {
+        display: inline-block;
+      }
+
+      &:before {
+        @include pseudo-block($top: 50%, $left: 0);
+        @include translateY(-50%);
+      }
+    }
+  }
+}

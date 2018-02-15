@@ -1,0 +1,23 @@
+name        = Crescent consulting
+description = Custom main theme
+core        = 7.x
+
+stylesheets[all][] = css/styles.css
+stylesheets[all][] = css/custom.css
+
+scripts[] = js/lib/device.min.js
+scripts[] = js/lib/html5.js
+scripts[] = js/lib/jquery.flexslider.js
+scripts[] = js/lib/slick.min.js
+scripts[] = js/lib/skrollr.min.js
+scripts[] = js/lib/ss-standard.js
+scripts[] = js/js.js
+
+regions[header] = Header
+regions[top_media] = Top Media
+regions[content_top] = Content Top
+regions[content] = Content
+regions[content_bottom] = Content Bottom
+regions[right_sidebar] = Right Sidebar
+regions[customers_logo] = Customers logo
+regions[footer] = Footer

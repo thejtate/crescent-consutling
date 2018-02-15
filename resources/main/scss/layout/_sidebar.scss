@@ -1,0 +1,55 @@
+.sidebar {
+
+  @media (min-width: $bp-middle) {
+    width: 330px;
+    float: left;
+    padding-left: 13px;
+  }
+
+  h2 {
+    border-bottom: 5px solid #2085cf;
+    padding: 0 0 6px;
+  }
+
+  .menu {
+    margin: 0;
+    padding: 0;
+    font-family: $avenir-meidum-italic;
+
+    & > li {
+      margin: 0 0 30px;
+      list-style: none;
+
+      a {
+        position: relative;
+        padding-left: 48px;
+        color: #000;
+
+        &:before {
+          @include pseudo-block($top: 50%, $left: -4px);
+          @include translateY(-50%);
+        }
+      }
+
+      &:first-child a:before {
+        @include oneline-sprite-box($icons, wellsitemgmt);
+      }
+
+      &:nth-child(2) a:before {
+        @include oneline-sprite-box($icons, projectmgmt);
+      }
+
+      &:nth-child(3) a:before {
+        @include oneline-sprite-box($icons, cementfrac);
+      }
+
+      &:nth-child(4) a:before {
+        @include oneline-sprite-box($icons, envrmtsafety);
+      }
+
+      &:last-child a:before {
+        @include oneline-sprite-box($icons, qaqc);
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.section-dedicate {
+  padding: 80px 0 50px;
+
+  h2, h3 {
+    text-align: center;
+    margin: 0 0 37px;
+  }
+
+  .text {
+    margin: 0 auto 40px;
+    max-width: 740px;
+  }
+
+  .btn-wrap {
+    text-align: center;
+    margin-bottom: 55px;
+  }
+
+  h3 {
+    font-size: 20px;
+
+    @media (min-width: $bp-small) {
+      font-size: 30px;
+    }
+
+    @media (min-width: $bp-middle) {
+      font-size: 36px;
+    }
+  }
+}

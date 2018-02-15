@@ -1,0 +1,23 @@
+.outer-wrapper {
+  overflow: hidden;
+}
+
+.content-wrapper {
+
+}
+
+.container {
+  max-width: $bp-middle;
+  margin: 0 auto;
+  position: relative;
+  @include clearfix();
+}
+
+.inner-wrapper {
+
+  ul.contextual-links li a {
+    font-size: 14px;
+    font-family: Arial;
+    line-height: 1;
+  }
+}

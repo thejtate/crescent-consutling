@@ -1,0 +1,131 @@
+.b-envire-edge {
+  height: 562px;
+  background: image-url('bg/enviro-edge.png') no-repeat;
+  @include background-size(100% 100%);
+  font-family: $avenir-regular;
+  padding-top: 25px;
+  position: relative;
+  color: #1f1f1f;
+  padding-left: 35%;
+  display: none;
+
+  @media (min-width: $bp-small) {
+    display: block;
+  }
+
+  @media (min-width: $bp-middle) {
+    padding-left: 43%;
+  }
+
+  .container {
+    height: 100%;
+    margin: 0;
+    width: 95%;
+
+    @media (min-width: $bp-small) {
+      font-size: 15px;
+      padding: 0;
+    }
+
+    @media (min-width: $bp-middle) {
+      width: 565px;
+      font-size: 10px;
+    }
+  }
+
+  .logo, .login-btn {
+    display: inline-block;
+    vertical-align: middle;
+
+    img {
+      display: block;
+    }
+  }
+
+  .logo {
+    min-height: 61px;
+    margin-right: 10px;
+
+    @media (min-width: $bp-middle) {
+      margin-right: 40px;
+    }
+  }
+
+  .login-btn {
+
+    .btn {
+      text-decoration: none;
+      font-size: 17px;
+      display: inline-block;
+      padding: 5px 8px 5px 31px;
+      background: #f05133;
+      font-family: $niks-bold-italic;
+      color: #fff;
+      @include border-radius(5px);
+      position: relative;
+      @include transition(opacity .3s);
+
+      &:hover {
+        opacity: .7;
+      }
+
+      &:before {
+        @include oneline-sprite-box($icons, icon-login);
+        @include pseudo-block($left: 7px, $top: 50%);
+        margin-top: -9px;
+      }
+    }
+  }
+
+  .hd {
+    margin-bottom: 55px;
+  }
+
+  .text {
+    letter-spacing: 0px;
+
+    @media (min-width: $bp-middle) {
+      letter-spacing: 1px;
+      font-size: 17px;
+    }
+  }
+
+  p {
+    margin: 0 0 20px;
+  }
+
+  .link {
+    position: absolute;
+    left: 8%;
+    bottom: 120px;
+    font-family: $museo-700;
+    font-size: 19px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    margin-top: -12px;
+
+    @media (min-width: $bp-middle) {
+      left: 21%;
+      bottom: 88px;
+    }
+
+    &:hover:before {
+      left: -24px;
+    }
+
+    &:after {
+      @include oneline-sprite-box($icons, link-img);
+      @include pseudo-block($left: -78px, $top: -226px);
+    }
+
+    &:before {
+      @include transition(left .3s);
+      @include pseudo-block($left: -28px, $top: 50%);
+      border-top: 12px solid transparent;
+      border-bottom: 12px solid transparent;
+      border-left: 21px solid #fff;
+      margin-top: -12px;
+    }
+  }
+}

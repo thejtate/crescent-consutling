@@ -1,0 +1,83 @@
+.form, .webform-client-form {
+  max-width: 620px;
+  margin: 0 auto;
+
+  fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  input:not([type=submit]):not([type=checkbox]):not([type=radio]):not([type=file]), textarea {
+    padding: 6px 10px;
+    border: 1px solid #adadad;
+    width: 100%;
+    background: #eaeaea;
+
+    &.error {
+      border-color: red;
+    }
+  }
+
+  label {
+    font-family: $museo-700;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .form-item {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+
+  .form-file {
+    margin-bottom: 15px;
+    display: inline-block;
+    padding: 6px 10px 6px 0;
+  }
+
+  .webform-component--name--first-name, .webform-component--name--last-name, .webform-component--persons-email--email,
+  .webform-component--address--city, .webform-component--address--state, .webform-component--persons-phone--phone {
+
+    @media (min-width: $bp-small) {
+      display: inline-block;
+      width: 300px;
+    }
+
+    &:first-child {
+
+      @media (min-width: $bp-small) {
+        margin-right: 14px;
+      }
+    }
+  }
+
+  .webform-component--description p {
+    font-size: 18px;
+    text-align: center;
+    margin: 15px 0;
+
+    @media (min-width: $bp-small) {
+      margin: 30px 0;
+      font-size: 22px;
+    }
+  }
+
+  select {
+    cursor: pointer;
+    outline: none;
+    padding: 6px 10px;
+    padding-right: 40px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    @include border-radius(0);
+    border: 1px solid #adadad;
+    background: #eaeaea image-url('bg/arrow-down-bk.png') center right no-repeat;
+
+    &.error {
+      border: 1px solid red;
+    }
+  }
+}

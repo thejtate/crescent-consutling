@@ -1,0 +1,10 @@
+.section-slider-navigation {
+  padding: 40px 0;
+  border-top: 1px solid #d4d4d4;
+  @include box-shadow(inset 0 0 130px 0px rgba(0, 0, 0, 0.15));
+  overflow: hidden;
+
+  @media (min-width: $bp-small) {
+    padding: 70px 0;
+  }
+}

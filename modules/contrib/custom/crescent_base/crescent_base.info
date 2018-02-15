@@ -1,0 +1,9 @@
+name = Crescent base
+description = Crescent base functionality
+package = Crescent
+core = 7.x
+version = 7.x-1.x
+
+files[] = crescent_base.admin.inc
+
+configure = admin/config/crescent-base/settings

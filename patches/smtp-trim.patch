@@ -1,0 +1,13 @@
+diff --git a/smtp.mail.inc b/smtp.mail.inc
+index 7f78380..62141a6 100644
+--- a/smtp.mail.inc
++++ b/smtp.mail.inc
+@@ -770,7 +770,7 @@ class SmtpMailSystem implements MailSystemInterface {
+ 
+     // If the input is a valid email address in its entirety, then there is
+     // nothing to do, just return that.
+-    if (valid_email_address($input)) {
++    if (valid_email_address(trim($input))) {
+       $components['email'] = trim($input);
+       return $components;
+     }

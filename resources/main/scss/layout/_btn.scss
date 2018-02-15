@@ -1,0 +1,43 @@
+.btn, .form-submit {
+  background: #fefefe;
+  color: #3c3c3c;
+  border: 1px solid #d3d3d3;
+  @include border-radius(7px);
+  display: inline-block;
+  @include box-shadow(inset 0 0 54px -3px rgba(0, 0, 0, 0.09));
+  @include transition(all .3s);
+  font-size: 18px;
+  font-family: $niks-normal;
+
+  &:hover {
+    text-decoration: none;
+    @include box-shadow(inset 0 0 54px -3px rgba(0, 0, 0, 0.2));
+  }
+}
+
+.btn {
+  padding: 12px 20px;
+
+  @media (min-width: $bp-small) {
+    padding: 17px 30px;
+    font-size: 30px;
+  }
+}
+
+.form-submit {
+  padding: 5px 15px;
+  font-size: 15px;
+
+  @media (min-width: $bp-small) {
+    border-radius: 3px;
+  }
+
+  &.webform-submit {
+    padding: 10px 20px;
+
+    @media (min-width: $bp-small) {
+      padding: 11px 25px;
+      font-size: 26px;
+    }
+  }
+}

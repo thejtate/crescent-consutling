@@ -1,0 +1,12 @@
+<?php
+/**
+ * @file
+ * Install, update and uninstall functions for the custom module.
+ */
+
+/**
+ * Implements hook_uninstall().
+ */
+function crescent_base_uninstall() {
+  variable_del('crescent_base_settings_footer');
+}

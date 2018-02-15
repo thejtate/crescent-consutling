@@ -1,0 +1,181 @@
+.b-map {
+
+  .items {
+    margin: 0 0 30px;
+  }
+
+  .info {
+    display: inline-block;
+
+    @media (min-width: $bp-small) {
+      display: block;
+    }
+  }
+
+  .item {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+
+    .col {
+      position: relative;
+      padding-left: 50px;
+      text-align: left;
+
+      .ss-icon {
+        position: absolute;
+        top: 5px;
+        left: 0;
+        font-size: 34px;
+        color: #1982cd;
+
+        &.ss-phone {
+          @include rotate(90deg);
+        }
+      }
+    }
+  }
+
+  .map {
+    margin-bottom: 65px;
+    position: relative;
+  }
+
+
+  .areas {
+
+    .area {
+      position: absolute;
+      border: 3px solid rgba(0, 0, 0, 0.13);
+      @include box-shadow(0 0 40px -2px rgba(0, 0, 0, 0.1));
+      @include border-radius(50%);
+      background: rgba(255, 255, 255, 0.3);
+      width: 100px;
+      height: 80px;
+      @include transition(opacity .3s);
+      opacity: 0;
+
+      &.animating-end {
+        opacity: 1;
+      }
+
+      &.a-position-1 {
+        top: -7px;
+        left: 288px;
+        width: 150px;
+        height: 84px;
+        @include transition-delay(.3s);
+      }
+
+      &.a-position-2 {
+        left: 203px;
+        top: 146px;
+        width: 119px;
+        height: 112px;
+        @include transition-delay(.4s);
+      }
+
+      &.a-position-3 {
+        left: 319px;
+        top: 183px;
+        width: 96px;
+        height: 65px;
+        @include transition-delay(.5s);
+      }
+
+      &.a-position-4 {
+        left: 241px;
+        top: 266px;
+        width: 137px;
+        height: 46px;
+        @include transition-delay(.6s);
+      }
+
+      &.a-position-5 {
+        left: 390px;
+        top: 247px;
+        width: 137px;
+        height: 109px;
+        @include transition-delay(.7s);
+      }
+
+      &.a-position-6 {
+        left: 324px;
+        top: 359px;
+        width: 94px;
+        height: 76px;
+        @include transition-delay(.8s);
+      }
+
+      &.a-position-7 {
+        left: 424px;
+        top: 352px;
+        width: 63px;
+        height: 63px;
+        @include transition-delay(.9s);
+      }
+
+      &.a-position-8 {
+        left: 398px;
+        top: 412px;
+        width: 85px;
+        height: 87px;
+        @include transition-delay(1s);
+      }
+
+      &.a-position-9 {
+        left: 499px;
+        top: 378px;
+        width: 66px;
+        height: 65px;
+        @include transition-delay(1.1s);
+      }
+
+      &.a-position-10 {
+        left: 521px;
+        top: 305px;
+        width: 57px;
+        height: 26px;
+        @include transition-delay(1.2s);
+      }
+
+      &.a-position-11 {
+        left: 575px;
+        top: 215px;
+        width: 79px;
+        height: 71px;
+        @include transition-delay(1.3s);
+      }
+
+      &.a-position-12 {
+        left: 676px;
+        top: 198px;
+        width: 79px;
+        height: 105px;
+        @include transition-delay(1.3s);
+      }
+
+      &.a-position-13 {
+        left: 748px;
+        top: 154px;
+        width: 95px;
+        height: 96px;
+        @include transition-delay(1.4s);
+      }
+    }
+  }
+
+  .points {
+
+    .point {
+      position: absolute;
+      display: block;
+      @include oneline-sprite-box($icons, point);
+
+      &.p-position-1 {
+        top: 283px;
+        left: 445px;
+      }
+    }
+  }
+}

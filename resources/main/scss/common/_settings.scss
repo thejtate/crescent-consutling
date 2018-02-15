@@ -1,0 +1,47 @@
+$icons: sprite-map('icons/*.png', $spacing: 8px, $layout: 'smart');
+//$h-sprites: sprite-map('h-sprites/*.png',$layout: 'vertical', $spacing: 8px);
+//$v-sprites: sprite-map('v-sprites/*.png', $layout: 'horizontal', $spacing: 8px);
+
+$experimental-support-for-svg: true;
+$experimental-support-for-opera: false;
+
+//color
+$color-h: #3c3c3c;
+$color: #7d7d7d;
+
+//fonts
+$avenir-regular: sourcesanspro-regular;
+$avenir-meidum: sourcesanspro-semibold;
+$avenir-meidum-italic: sourcesanspro-semibolditalic;
+$niks-bold-italic: niks-bolditalic;
+$niks-normal: niks-normal;
+$museoslab-100: museoslab-100;
+$museoslab-700: museoslab-700;
+$museo-300: museo-300;
+$museo-700: museo-700;
+
+//grid vars
+//widths
+$width-xsmall: 90%;
+//xs < $bp-small
+$bp-small: 768px;
+$width-small: 90%;
+//$bp-middle > sm >= $bp-small
+$bp-middle: 1030px;
+$width-middle: 992px;
+//$bp-large > md >= $bp-middle
+$bp-large: 1300px;
+$width-large: 1270px;
+
+//offsets
+$container-padding-left: 0;
+$container-padding-right: 0;
+
+$container-fluid-padding-left: 0;
+$container-fluid-padding-right: 0;
+
+$row-margin-left: 0;
+$row-margin-right: 0;
+
+$col-padding-left: 0;
+$col-padding-right: 0;

@@ -1,0 +1,43 @@
+.section-slider {
+  padding: 30px 0;
+
+  @media (min-width: $bp-small) {
+    padding: 80px 0;
+  }
+
+  @media (min-width: $bp-middle) {
+    padding: 120px 0;
+  }
+
+  h2 {
+    font-size: 20px;
+
+    @media (min-width: $bp-small) {
+      font-size: 28px;
+    }
+
+    @media (min-width: $bp-middle) {
+      font-size: 36px;
+    }
+  }
+
+  .row {
+    position: relative;
+  }
+
+  .col {
+    position: static;
+    padding: 0 10px;
+
+    .img {
+
+      @media (min-width: $bp-small) {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        left: 50%;
+        @include translateY(-50%);
+      }
+    }
+  }
+}

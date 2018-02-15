@@ -1,0 +1,30 @@
+.section-text {
+  padding: 40px 0;
+
+  @media (min-width: $bp-small) {
+    padding: 60px 0;
+  }
+
+  @media (min-width: $bp-middle) {
+    padding: 100px 0 75px;
+  }
+
+  h2 {
+    color: #2488cf;
+    font-size: 28px;
+    margin: 0 0 15px;
+
+    @media (min-width: $bp-small) {
+      font-size: 50px;
+    }
+
+    @media (min-width: $bp-middle) {
+      font-size: 72px;
+      margin: 0;
+    }
+  }
+
+  .col:first-child {
+    padding-right: 20px;
+  }
+}

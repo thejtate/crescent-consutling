@@ -1,0 +1,56 @@
+.section-careers {
+  padding: 30px 0;
+  text-align: center;
+
+  @media (min-width: $bp-small) {
+    padding: 80px 50px;
+    text-align: left;
+  }
+
+  @media (min-width: $bp-middle) {
+    padding: 136px 130px 116px;
+  }
+
+  .col:first-child {
+    margin: 0 0 20px;
+
+    @media (min-width: $bp-small) {
+      margin: 0;
+    }
+  }
+
+  h2 {
+    color: #2488cf;
+    font-size: 28px;
+    margin: 0 0 20px;
+
+    @media (min-width: $bp-small) {
+      font-size: 50px;
+    }
+
+    @media (min-width: $bp-middle) {
+      font-size: 72px;
+      margin: 0 0 45px;
+    }
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: $museo-300;
+
+    @media (min-width: $bp-small) {
+      padding: 21px 0 0 38px;
+    }
+
+    li {
+      margin: 0 0 10px;
+      color: #000;
+
+      @media (min-width: $bp-small) {
+        margin: 0 0 29px;
+      }
+    }
+  }
+}
